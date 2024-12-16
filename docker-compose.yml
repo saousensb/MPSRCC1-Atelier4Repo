@@ -5,7 +5,7 @@ services:
     image: mysql:8.0
     container_name: container-mysql
     environment:
-      MYSQL_ROOT_PASSWORD: Wissem123!
+      MYSQL_ROOT_PASSWORD: Sawsen123!
       MYSQL_DATABASE: db_example
     ports:
       - "3306:3306"
@@ -25,7 +25,7 @@ services:
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/db_example?useSSL=false
       SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: Wissem123!
+      SPRING_DATASOURCE_PASSWORD: Sawsen123!
     depends_on:
       - mysql
     networks:
@@ -37,7 +37,7 @@ services:
   #   environment:
   #     PMA_HOST: mysql
   #     PMA_USER: root
-  #     PMA_PASSWORD: Wissem123!
+  #     PMA_PASSWORD: Sawsen123!
   #   ports:
   #     - "8081:80"
   #   networks:
